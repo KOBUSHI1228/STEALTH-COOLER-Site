@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ - 株式会社ステルスクーラー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="site-wrapper">
+      <div class="vertical-line"></div>
+
+<!-- ヘッダー -->
+<header class="mobile-header">
+    <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="STEALTH COOLER KiT ロゴ" />
+    </a>
+    <a href="cart.html" class="cart-icon-wrapper">
+      <img src="img/cartP.PNG" alt="カート" class="cart-icon" />
+      <span class="cart-count" id="cartCount"></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <nav class="side-menu" id="sideMenu">
+    <button class="close-menu" id="closeMenu">&times;</button>
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="product-list.html">製品一覧</a></li>
+      <li><a href="introduce.html">代表紹介</a></li>
+      <li><a href="about.html">会社概要</a></li>
+      <li><a href="privacy.html">プライバシーポリシー</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+    <a href="checkout.html" class="menu-purchase-btn">
+        <i class="fas fa-shopping-cart"></i> ご購入はこちら
+      </a>
+  </nav>
+<main>
+  <section>      
+    <h2 class="gold-title">お問い合わせ</h2>
+    <p class="under-title">商品に関するお問い合わせまたは <strong>アイディア・リクエスト</strong> があればこちらまで
+      </p>
+      
+    <form action="leo_futa@icloud.com" method="POST">
+
+        <!-- 🔒 ここが hidden パラメータ -->
+        <input type="hidden" name="_subject" value="ステルスクーラーHPからのお問い合わせ">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+        <input type="hidden" name="_honey" style="display:none">
+      
+        <!-- 👇 以下は表示される入力欄 -->
+        <label for="name">お名前</label><br />
+        <input type="text" id="name" name="name" required><br /><br />
+      
+        <label for="email">メールアドレス</label><br />
+        <input type="email" id="email" name="email" required><br /><br />
+      
+        <label for="message">お問い合わせ内容</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      
+        <button type="submit" class="checkout-button">送信</button>
+      </form>
+      
+  </section>
+</main>
+  <!-- フッター -->
+  <footer class="footer-bar-short">
+    Copyright © 2025 株式会社ステルスクーラー All Rights Reserved.
+  </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

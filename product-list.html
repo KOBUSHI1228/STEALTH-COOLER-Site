@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>製品一覧 - 株式会社ステルスクーラー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="site-wrapper">
+      <div class="vertical-line"></div>
+<!-- ヘッダー -->
+   <header class="mobile-header">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="STEALTH COOLER KiT ロゴ" />
+        </a>
+        <a href="cart.html" class="cart-icon-wrapper">
+          <img src="img/cartP.PNG" alt="カート" class="cart-icon" />
+          <span class="cart-count" id="cartCount"></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </header>
+    
+      <nav class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="product-list.html">製品一覧</a></li>
+          <li><a href="introduce.html">代表紹介</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        <a href="checkout.html" class="menu-purchase-btn">
+            <i class="fas fa-shopping-cart"></i> ご購入はこちら
+          </a>
+      </nav>
+<main>
+  <section>
+          <h2 class="gold-title-animated">製品一覧</h2>
+          <form action="cart.html" method="GET">
+            <div class="product-grid">
+      
+              <!-- 商品1 -->
+              <div class="product-item">
+                <img src="img/gazou.jpg" alt="商品画像1">
+                  <div class="product-title">ステルスクーラーキット（バッテリー付）</div>
+                <div class="product-price">¥19,500</div>
+                <label for="quantity1">数量</label>
+                <select name="quantity1" class="quantity-select">
+                  <option value="" disabled selected hidden>選択</option>
+                  <option value="1">1個</option>
+                  <option value="2">2個</option>
+                  <option value="3">3個</option>
+                  <option value="4">4個</option>
+                  <option value="5">5個</option>
+                </select>
+              </div>
+ <!-- 商品2 -->
+<div class="product-item">
+    <img src="img/gazou.jpg" alt="商品画像2">
+      <div class="product-title">ステルスクーラーキット（バッテリーなし）</div>
+    <div class="product-price">¥19,000</div>
+    <label for="quantity2">数量</label>
+    <select name="quantity2" class="quantity-select">
+      <option value="" disabled selected hidden>選択</option>
+      <option value="1">1個</option>
+      <option value="2">2個</option>
+      <option value="3">3個</option>
+      <option value="4">4個</option>
+      <option value="5">5個</option>
+    </select>
+  </div>
+  
+  <!-- 商品3 -->
+  <div class="product-item">
+    <img src="img/gazou.jpg" alt="商品画像3">
+      <div class="product-title">交換用タンク・チューブセット</div>
+    <div class="product-price">¥2,500</div>
+    <label for="quantity3">数量</label>
+    <select name="quantity3" class="quantity-select">
+      <option value="" disabled selected hidden>選択</option>
+      <option value="1">1個</option>
+      <option value="2">2個</option>
+      <option value="3">3個</option>
+      <option value="4">4個</option>
+      <option value="5">5個</option>
+    </select>
+  </div>
+  
+  <!-- 商品4 -->
+  <div class="product-item">
+    <img src="img/gazou.jpg" alt="商品画像4">
+      <div class="product-title">交換用ポンプ</div>
+    <div class="product-price">¥4,000</div>
+    <label for="quantity4">数量</label>
+    <select name="quantity4" class="quantity-select">
+      <option value="" disabled selected hidden>選択</option>
+      <option value="1">1個</option>
+      <option value="2">2個</option>
+      <option value="3">3個</option>
+      <option value="4">4個</option>
+      <option value="5">5個</option>
+    </select>
+  </div>
+  
+  <!-- 商品5 -->
+  <div class="product-item">
+    <img src="img/gazou.jpg" alt="商品画像5">
+      <div class="product-title">交換用バッテリー２個セット</div>
+    <div class="product-price">¥4,000</div>
+    <label for="quantity5">数量</label>
+    <select name="quantity5" class="quantity-select">
+      <option value="" disabled selected hidden>選択</option>
+      <option value="1">1個</option>
+      <option value="2">2個</option>
+      <option value="3">3個</option>
+      <option value="4">4個</option>
+      <option value="5">5個</option>
+    </select>
+  </div>
+  
+  <!-- 商品6 -->
+  <div class="product-item">
+    <img src="img/gazou.jpg" alt="商品画像6">
+      <div class="product-title">補強メッシュ生地</div>
+    <div class="product-price">¥2,000</div>
+    <label for="quantity6">数量</label>
+    <select name="quantity6" class="quantity-select">
+      <option value="" disabled selected hidden>選択</option>
+      <option value="1">1個</option>
+      <option value="2">2個</option>
+      <option value="3">3個</option>
+      <option value="4">4個</option>
+      <option value="5">5個</option>
+    </select>
+  </div>
+  </div>
+           
+      <!-- カートへ進むボタン -->
+        <button id="goToCart" class="checkout-button">カートに進む</button>
+    </form>
+  </section>
+</main>
+  <!-- フッター -->
+  <footer class="footer-bar-short">
+    Copyright © 2025 株式会社ステルスクーラー All Rights Reserved.
+  </footer>
+</div>
+<!-- ライトボックス本体 -->
+<div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-image" src="" alt="拡大画像">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>  
+</body>
+</html>

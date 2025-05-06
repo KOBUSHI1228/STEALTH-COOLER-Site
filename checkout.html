@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>決済ページ - STEALTH COOLER KiT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="site-wrapper">
+      <div class="vertical-line"></div>
+    <!-- ヘッダー -->
+    <header class="mobile-header">
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="STEALTH COOLER KiT ロゴ" />
+        </a>
+        <a href="cart.html" class="cart-icon-wrapper">
+          <img src="img/cartP.PNG" alt="カート" class="cart-icon" />
+          <span class="cart-count" id="cartCount"></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </header>
+    
+      <nav class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="product-list.html">製品一覧</a></li>
+          <li><a href="introduce.html">代表紹介</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        <a href="checkout.html" class="menu-purchase-btn">
+            <i class="fas fa-shopping-cart"></i> ご購入はこちら
+          </a>
+      </nav>
+
+<main>      
+  <h1 class="gold-title">公式オンライン購入ページ</h1>
+  <p>ご希望の商品を以下より選び、決済にお進みください。</p>
+
+  <form action="https://your-server.com/create-checkout-session" method="POST">
+    <label>
+      <input type="radio" name="product" value="with-battery" checked>
+      水冷服（バッテリー付き）  ¥19,500
+    </label>
+    <hr class="divider"> <!-- 区切り線を追加 -->
+    <label>
+      <input type="radio" name="product" value="without-battery">
+      水冷服（バッテリーなし）  ¥19,000
+    </label><br>
+    <label for="quantity">数量</label>
+<select id="quantity" name="quantity">
+  <option value="1">1個</option>
+  <option value="2">2個</option>
+  <option value="3">3個</option>
+  <option value="4">4個</option>
+  <option value="5">5個</option>
+</select>
+
+
+    <button type="submit" id="checkout-button" class="checkout-button">クレジットカードで支払う</button>
+  </form>
+
+  <hr>
+  <p>PayPayをご希望の場合は、下記ボタンをタップしてください（近日対応予定）。</p>
+  <button class="paypay-button" disabled>PayPayで支払う（準備中）</button>
+</main>
+ <!-- フッター -->
+  <footer class="footer-bar-short">
+    Copyright © 2025 株式会社ステルスクーラー All Rights Reserved.
+  </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
