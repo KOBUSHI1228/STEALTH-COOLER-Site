@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>株式会社ステルスクーラー</title>
+  <link rel="stylesheet" href="style.css" />
+<!-- Google Fonts -->
+ <!-- NOTO SANS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<!-- POPPINS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- KIWI -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- ここからボディ -->
+<body>
+  <div class="site-wrapper">
+    <div class="vertical-line"></div>
+<!-- ヘッダー -->
+    <header class="mobile-header">
+        <a href="index.html" class="logo"> 
+            <img src="img/logo.svg" alt="STEALTH COOLER KiT ロゴ" />
+        </a>
+        <a href="cart.html" class="cart-icon-wrapper">
+          <img src="img/cartP.png" alt="カート" class="cart-icon" />
+          <span class="cart-count" id="cartCount"></span>
+        </a>
+        <button class="menu-toggle" id="menuToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </header>
+    
+      <nav class="side-menu" id="sideMenu">
+        <button class="close-menu" id="closeMenu">&times;</button>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="product-list.html">製品一覧</a></li>
+          <li><a href="introduce.html">代表紹介</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+        <a href="checkout.html" class="menu-purchase-btn">
+            <i class="fas fa-shopping-cart"></i> ご購入はこちら
+          </a>
+    </nav>
+    <main>
+      <!-- ヒーローセクション -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p>For POLICE Use Only</p>
+          <!-- DIY Water-Cooled Clothing Kit -->
+          <h1>水冷服自作キット</h1>
+          <a href="checkout.html" class="hero-purchase-btn">ご購入はこちら</a>
+        </div>
+        <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        
+      </section>
+      <div class="water-splash">
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+      </div>
+      
+      <section class="logo-section">
+        <img src="img/logo2.png" alt="STEALTH COOLER KiT ロゴ" class="hero-logo" />
+      </section>
+      <div class="water-splash">
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+        <span class="drop"></span>
+      </div>
+      <!-- セクション１ PHILOSOPHY-->
+      <section id="section1" class="fade-section">
+        <span class="section-number">01</span> 
+        <h2 class="section-label">基本理念</h2>
+        <h3 class="typing-title" data-text="暑さに耐えるだけの毎日を、終わらせる。"></h3>
+        <div class="list-grid three-items">
+          <div class="list-item">
+            <div class="item-title">日中の活動がつらい</div>
+            <div class="image-overlay">
+              <img src="img/general.PNG" alt="暑さ対策1" />
+            </div>
+            <p class="item-description">強烈な日差しで体力を奪われます。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">暑さで集中力が持たない</div>
+            <div class="image-overlay">
+              <img src="img/machi.PNG" alt="暑さ対策2" />
+            </div>
+            <p class="item-description">注意力散漫になり、リスクが増大。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">他の対策で効果は？</div>
+            <div class="image-overlay">
+              <img src="img/item3.png" alt="暑さ対策3" />
+            </div>
+            <p class="item-description">既存の対策だけでは限界があります。</p>
+          </div>
+        </div>
+        <!-- セクション末尾に追加 -->
+<div class="more-button-wrapper">
+  <button class="more-button" data-target="modal-section1">More</button>
+  <span class="arrow-symbol"></span>
+</div>
+
+<!-- ライトボックス用 -->
+<div id="modal-section1" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-section-number">01</div>
+    <p class="modal-text">真夏の昼間に、連続2時間の屋外活動ができますか？<br><br>
+      地球温暖化の影響で、日本の夏は年々過酷さを増しています。<br>  
+      最高気温や熱中症搬送者数は、毎年のように記録を更新。 <br> 
+      そんな環境で、本当に力を発揮できるでしょうか？<br><br>
+      今ある暑さ対策だけで、本当に十分ですか？
+      </p>
+  </div>
+</div>
+      </section>
+    <!-- セクション２　PROBLEM -->
+      <section id="section2" class="fade-section">
+        <span class="section-number">02</span> 
+        <h2 class="section-label">課題</h2>
+        <h3 class="typing-title" data-text="よくある対策では、本当に足りていますか？"></h3>
+        <div class="list-grid double-column">
+          <div class="list-item">
+            <div class="item-title">サングラス・ネックアイス</div>
+            <div class="image-overlay">
+              <img src="img/sunglass.PNG" alt="対策1" />
+            </div>
+            <p class="item-description">一時的な冷感にとどまります。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">熱風取り込み問題<br>動作音の無線干渉問題</div>
+            <div class="image-overlay">
+              <img src="img/general2.PNG" alt="対策2" />
+            </div>
+            <p class="item-description">温風取り込みで熱中症リスク。<br>警察用途では不向き。</p>
+          </div>
+        </div>
+        <!-- セクション2の場合 -->
+<div class="more-button-wrapper">
+  <button class="more-button" data-target="modal-section2">More</button>
+  <span class="arrow-symbol"></span>
+</div>
+
+<div id="modal-section2" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-section-number">02</div>
+    <p class="modal-text">サングラスの着用が許可され、ネックアイスの使用も認められるようになりました。<br>  
+      しかし サングラスは冷却には関係なく、ネックアイスはわずか5分ほどで効果が消えてしまいます。<br><br>
+      
+      また、屋外作業の現場で広く使われているファン付き作業服は、<br>  
+      防刃ベストからはみ出してしまい、外観上の制約があります。<br>
+      さらに、ファンの作動音が無線通信に干渉することも。<br><br>
+      
+      「安全」と「実用性」を両立した、真に有効な酷暑対策...<br>
+      本当に、できているでしょうか？<br><br>
+      
+      私は、交番勤務や機動隊で活動する警察官 約30名に対して、酷暑下の勤務実態を独自に調査しました。<br>  
+その声から浮かび上がった現場の課題をもとに、問題を根本から解決する ── <br> 
+そんな専用設計の製品を、開発することにしたのです。
+
+      </p>
+  </div>
+</div>
+
+      </section>
+    <!-- セクション３ SOLUTION-->
+      <section id="section3" class="fade-section">
+        <span class="section-number">03</span> 
+        <h2 class="section-label">解決策</h2>
+        <h3 class="typing-title" data-text="現場の課題を解決する、”水冷服”という選択肢。"></h3>
+        <div class="list-grid double-column">
+          <div class="list-item">
+            <div class="item-title">ステルス設計</div>
+            <div class="image-overlay">
+              <img src="img/main1.png" alt="新選択肢1" />
+            </div>
+            <p class="item-description">静かに、確実に、身体を冷却します。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">装着感ゼロ</div>
+            <div class="image-overlay">
+              <img src="img/main2.png" alt="新選択肢2" />
+            </div>
+            <p class="item-description">違和感なく自然に着用可能。</p>
+          </div>
+        </div>
+        <!-- セクション3の場合 -->
+<div class="more-button-wrapper">
+  <button class="more-button" data-target="modal-section3">More</button>
+  <span class="arrow-symbol"></span>
+</div>
+
+<div id="modal-section3" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-section-number">03</div>
+    <p class="modal-text">“水冷服”をご存じですか？<br><br>
+
+      背中のタンクに保冷剤と水を入れ、ポンプの力でチューブに冷水を循環させ、身体を冷やす装備です。<br><br>
+      
+      この水冷服は、冷却部材が肌に直接触れず、冷水が服内をめぐる構造のため、<br>
+      強すぎない、穏やかな冷却が長時間持続します。<br><br>
+      
+      「冷やしすぎず、持続する」──  <br>
+      酷暑現場に最適な新しい選択肢です。
+      </p>
+  </div>
+</div>
+
+      </section>
+    <!-- セクション４ FEATURES-->
+      <section id="section4" class="fade-section">
+        <span class="section-number">04</span> 
+        <h2 class="section-label">特徴</h2>
+        <h3 class="typing-title" data-text="ステルスクーラーキットの”特長”"></h3>
+        <div class="list-grid three-items">
+          <div class="list-item">
+            <div class="item-title">内側に装着</div>
+            <div class="image-overlay">
+              <img src="img/poster1.png" alt="特長1" />
+            </div>
+            <p class="item-description">外見からは全くわからない仕様です。</p>
+          </div>
+          <div class="list-item">
+           <div class="item-title">通気性確保</div>
+            <div class="image-overlay">
+              <img src="img/breathable.PNG" alt="特長2" />
+            </div>
+            <p class="item-description">防刃ベストの素材を活かした蒸れにくく快適な着用感。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">静音ポンプ</div>
+            <div class="image-overlay">
+              <img src="img/quietmoter.png" alt="特長3" />
+            </div>
+            <p class="item-description">静音設計のため、無線・会話への影響ゼロ。</p>
+          </div>
+        </div>
+        <!-- セクション4の場合 -->
+<div class="more-button-wrapper">
+  <button class="more-button" data-target="modal-section4">More</button>
+  <span class="arrow-symbol"></span>
+</div>
+
+<div id="modal-section4" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-section-number">04</div>
+    <p class="modal-text">本製品は、防刃ベストの内側に装着する冷却装備です。<br>  
+      外観には一切現れず、着用していることは周囲にまったく気づかれません。<br>  
+      見た目を変えず、密かに身体を冷やす ── それが「ステルスクーラー」という名前の由来です。<br><br>
+      
+      構成はシンプルで、主に4つのパーツから成り立ちます。<br>
+      保冷剤と水を入れるためのタンク、冷水を循環させるポンプとチューブ、<br>  
+      そしてポンプに電力を供給するモバイルバッテリー。<br><br>
+      
+      ポンプとバッテリーはサイドポケットに収まり、<br>  
+      タンクとチューブは極細の結束バンドで防刃ベストに固定するだけ。<br>  
+      既存の装備を大きく変える必要はありません。<br><br>
+      
+      要となるポンプは、国立大学発のスタートアップ「合同会社NEKOMOT」との共同開発。<br>  
+      防刃ベストの内側にこのキットを装着することで、<br>  
+      『防御装備そのものを冷却装置に変える』── 専用設計による革新的な製品です。
+      </p>
+  </div>
+</div>
+
+      </section>
+    <!-- セクション５ PERFORMANCE-->
+      <section id="section5" class="fade-section">
+        <span class="section-number">05</span> 
+        <h2 class="section-label">性能</h2>
+        <h3 class="typing-title" data-text="性能と実証データ"></h3>
+        <div class="list-grid double-column">
+          <div class="list-item">
+            <div class="item-title">約2時間の冷却効果</div>
+            <div class="image-overlay">
+              <img src="img/manga.PNG" alt="性能1" />
+            </div>
+            <p class="item-description">２つの保冷剤をローテーションさせることで冷却が永続します。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">最大16.5時間連続稼働</div>
+            <div class="image-overlay">
+              <img src="img/battery.PNG" alt="性能2" />
+            </div>
+            <p class="item-description">満充電で仮眠時間まで付けっぱなしOK。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">前面-16℃</div>
+            <div class="image-overlay">
+              <img src="img/thermo1.JPG" alt="性能3" />
+            </div>
+            <p class="item-description">室温36℃下で実験。</p>
+          </div>
+          <div class="list-item">
+            <div class="item-title">背面-25℃</div>
+            <div class="image-overlay">
+              <img src="img/thermo2.JPG" alt="性能4" />
+            </div>
+            <p class="item-description">背面冷却効果データ。冷却水を循環させ、身体を確実に冷やします。</p>
+          </div>
+        </div>
+        <!-- セクション5の場合 -->
+<div class="more-button-wrapper">
+  <button class="more-button" data-target="modal-section5">More</button>
+  <span class="arrow-symbol"></span>
+</div>
+
+<div id="modal-section5" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-section-number">05</div>
+    <p class="modal-text">業務用エアコンを用い、室温36℃の環境下で着用実験を実施しました。<br><br>
+
+      その結果 ── <br> 
+      保冷剤が完全に溶けるまで約1時間30分、冷却水の体感効果が続いたのは開始からおよそ2時間10分。<br>  
+      使用したモバイルバッテリー（本製品付属の10,000mAh）は、連続で約16.5時間の駆動を記録しました。<br><br>
+      
+      また、ステルスクーラーを装着した模擬防刃ベストの表面温度をサーモグラフィカメラで測定したところ、  <br>
+      前面で約16℃、背面で約25℃まで低下。<br>  
+      室温・体温との差は最大で約25℃に達し、身体を確実にクールダウンさせることが確認されました。<br><br>
+      
+      この実験から、『約2時間ごとの保冷剤交換』と、『仮眠時間中に1度だけバッテリーを充電』する運用で、<br>  
+      1日を通して安定した冷却効果が得られることが実証されました。
+      </p>
+  </div>
+</div>
+
+<section>HOW TO USE <br>⭐️⭐️仮　着用動画を載せるスペース⭐️⭐️</section>
+
+    <!-- セクション６ -->
+      <section id="section6" class="fade-section">
+        <span class="section-number">06</span> 
+        <h2 class="section-label">FOR YOU</h2>
+        <h3 class="typing-title" data-text="あなたの任務を、もっと快適に。"></h3>
+        <p>命を守る防具に、熱中症から身を守る機能を。<br>
+          ステルスクーラーキットは、酷暑の中で戦う警察官のために開発された“実戦型”の冷却装備です。</p>
+        <div class="buttons">
+          <a href="checkout.html" class="hero-purchase-btn">ステルスクーラーキットを購入する</a>
+          <a href="product-list.html" class="button-back-home">当社製品一覧はこちら</a>
+        </div>
+      </section>
+  
+        </main>
+        <div class="horizontal-line"></div>
+
+        <footer class="footer-bar">
+          <div class="footer-inner">
+            <!-- 左側ナビリンク -->
+            <div class="footer-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-list.html">Products</a></li>
+                <li><a href="introduce.html">Founder</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+        
+            <!-- 右側：Instagram & キャラ -->
+            <div class="footer-info">
+              <a href="https://www.instagram.com/your_account" target="_blank" class="instagram-link">
+                <img src="img/Instagram.png" alt="Instagram" class="instagram-icon">
+              </a>
+              <div class="character-wrapper">
+                <img src="img/IMG.PNG" alt="当社イメージキャラクター ステポリくん" class="character-img">
+                <p class="character-caption">当社イメージキャラクター<br><strong>ステポリくん</strong></p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- 一番下の著作権表記 -->
+          <div class="footer-copy">
+            Copyright © 2025 株式会社ステルスクーラー All Rights Reserved.
+          </div>
+        </footer>
+        
+       <script src="script.js"></script>
+</body>
+</html>
